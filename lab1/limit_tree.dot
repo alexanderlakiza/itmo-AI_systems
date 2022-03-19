@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="hours-per-week <= 41.5\ngini = 0.366\nsamples = 29305\nvalue = [22252, 7053]\nclass = <=50K", fillcolor="#eda978"] ;
+1 [label="job_Other-service <= 0.5\ngini = 0.286\nsamples = 20717\nvalue = [17138, 3579]\nclass = <=50K", fillcolor="#ea9b62"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="education_Doctorate <= 0.5\ngini = 0.311\nsamples = 18108\nvalue = [14614, 3494]\nclass = <=50K", fillcolor="#eb9f68"] ;
+1 -> 2 ;
+3 [label="gini = 0.307\nsamples = 17953\nvalue = [14559, 3394]\nclass = <=50K", fillcolor="#eb9e67"] ;
+2 -> 3 ;
+4 [label="gini = 0.458\nsamples = 155\nvalue = [55, 100]\nclass = >50K", fillcolor="#a6d3f3"] ;
+2 -> 4 ;
+5 [label="relationship_Not-in-family <= 0.5\ngini = 0.063\nsamples = 2609\nvalue = [2524, 85]\nclass = <=50K", fillcolor="#e68540"] ;
+1 -> 5 ;
+6 [label="gini = 0.083\nsamples = 1858\nvalue = [1777, 81]\nclass = <=50K", fillcolor="#e68742"] ;
+5 -> 6 ;
+7 [label="gini = 0.011\nsamples = 751\nvalue = [747, 4]\nclass = <=50K", fillcolor="#e5823a"] ;
+5 -> 7 ;
+8 [label="education_Bachelors <= 0.5\ngini = 0.482\nsamples = 8588\nvalue = [5114, 3474]\nclass = <=50K", fillcolor="#f7d7c0"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="relationship_Husband <= 0.5\ngini = 0.461\nsamples = 6669\nvalue = [4264, 2405]\nclass = <=50K", fillcolor="#f4c8a9"] ;
+8 -> 9 ;
+10 [label="gini = 0.278\nsamples = 2840\nvalue = [2366, 474]\nclass = <=50K", fillcolor="#ea9a61"] ;
+9 -> 10 ;
+11 [label="gini = 0.5\nsamples = 3829\nvalue = [1898, 1931]\nclass = >50K", fillcolor="#fcfdff"] ;
+9 -> 11 ;
+12 [label="age <= 28.5\ngini = 0.493\nsamples = 1919\nvalue = [850, 1069]\nclass = >50K", fillcolor="#d6ebfa"] ;
+8 -> 12 ;
+13 [label="gini = 0.354\nsamples = 304\nvalue = [234, 70]\nclass = <=50K", fillcolor="#eda774"] ;
+12 -> 13 ;
+14 [label="gini = 0.472\nsamples = 1615\nvalue = [616, 999]\nclass = >50K", fillcolor="#b3d9f5"] ;
+12 -> 14 ;
+}
